@@ -5,7 +5,7 @@ let presses = function(string) {
     for (let i = 0; i < string.length; i++) {
         for (let j = 0; j < keypad.length; j++) {
             if (keypad[j].includes(string[i].toLowerCase())) {
-                sum += (keypad[j].indexOf(string[i]) + 1);
+                sum += (keypad[j].indexOf(string[i].toLowerCase()) + 1);
             }
         }
     }
