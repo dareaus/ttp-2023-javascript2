@@ -1,12 +1,15 @@
 // Code your solution here
 let multiplicationTable = function(r, c) {
     let table = [];
-    for (let p in r) {
+    for (let i = 1; i <= r; i++) {
         row = [];
-        for (let q in c) {
-            row.push(p*q);
+        for (let j = 1; j <= c; j++) {
+            row.push(i * j);
         }
         table.push(row);
     }
     return table;
 }
+
+
+
