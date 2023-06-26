@@ -14,5 +14,3 @@ let soup = function(phrase, characterBank) {
     }
     return(true);
 }
-
-console.log(soup("asdasd", "as"));
