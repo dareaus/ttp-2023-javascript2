@@ -1,16 +1,18 @@
 // Code your solution here
-let soup = function(phrase, bank) {
+let soup = function(phrase, characterBank) {
     for (let i = 0; i < phrase.length; i++) {
-        let check = False;
-        for (let j = 0; j < bank.length; j++) {
-            if (phrase[i] === bank[j]) {
-                check = True;
+        let check = false;
+        for (let j = 0; j < characterBank.length; j++) {
+            if (phrase[i] === characterBank[j]) {
+                check = true;
                 break;
             }
         }
         if (!check) {
-            return(False);
+            return(false);
         }
     }
-    return(True);
+    return(true);
 }
+
+console.log(soup("asdasd", "as"));
