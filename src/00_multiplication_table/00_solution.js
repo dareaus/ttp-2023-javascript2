@@ -11,6 +11,3 @@ let multiplicationTable = function(rows, columns) {
     return table;
 }
 
-console.log(multiplicationTable(3, 5));
-
-
