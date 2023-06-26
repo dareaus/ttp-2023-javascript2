@@ -12,13 +12,13 @@ function createBook(id, title, author, price) {
 createBook.prototype.getInfo = function() {
     return `${this.title} by ${this.author}`;
 }
-createBook.getPrice = function() {
+createBook.prototype.getPrice = function() {
     return this.price;
 }
-createBook.addRating = function(rating) {
+createBook.prototype.addRating = function(rating) {
     this.rating.concat(rating);
 }
-createBook.getRating = function() {
+createBook.prototype.getRating = function() {
     let sum = 0;
     for (let i = 0; i < this.rating.length; i++) {
         sum += this.rating[i].length;
@@ -26,8 +26,3 @@ createBook.getRating = function() {
     return (sum/this.rating.length);
 }
 
-
-
-
-let book = new createBook(1, 2, 3, 4);
-console.log(book.getInfo());
