@@ -1,7 +1,7 @@
 // Code your solution here
 /* eslint-disable no-unused-vars, no-prototype-builtins */
 function createBook(id, title, author, price) {
-    Object.create(book);
+    let book = Object.create(createBook);
     book.id = id;
     book.title = title;
     book.author = author;
