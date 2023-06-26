@@ -8,3 +8,8 @@ let findObjPropsHasOwn = function(object) {
     }
     return properties.join(", ");
 }
+
+let findObjKeys = function(object) {
+    let properties = Object.keys(object);
+    return properties.join(", ");
+}
