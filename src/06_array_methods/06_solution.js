@@ -13,3 +13,11 @@ let useFilter = function(arr) {
     })
     return output;
 }
+
+let sumWithReduce = function(arr) {
+    let sum = arr.reduce(function(accumulator, num) {
+        accumulator += num;
+        return accumulator;
+    }, 0)
+    return sum;
+}
