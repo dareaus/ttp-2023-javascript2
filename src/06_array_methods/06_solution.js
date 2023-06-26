@@ -14,10 +14,10 @@ let useFilter = function(arr) {
     return output;
 }
 
-let sumWithReduce = function(arr) {
+let sumWithReduce = function(arr, val) {
     let sum = arr.reduce(function(accumulator, num) {
         accumulator += num;
         return accumulator;
-    }, 0)
+    }, val)
     return sum;
 }
