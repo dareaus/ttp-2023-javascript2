@@ -1,28 +1,31 @@
 // Code your solution here
 /* eslint-disable no-unused-vars, no-prototype-builtins */
 function createBook(id, title, author, price) {
-    this.id = id;
-    this.title = title;
-    this.author = author;
-    this.price = price;
-    this.rating = [];
-    this.getInfo = function() {
-        return `${this.title} by ${this.author}`;
-    }
-    this.getPrice = function() {
-        return this.price;
-    }
-    this.addRating = function(rating) {
-        this.rating.concat(rating);
-    }
-    this.getRating = function() {
-        let sum = 0;
-        for (let i = 0; i < this.rating.length; i++) {
-            sum += this.rating[i].length;
-            }
-        return (sum/this.rating.length);
-    }
+    Object.create(book);
+    book.id = id;
+    book.title = title;
+    book.author = author;
+    book.price = price;
+    book.rating = [];
+    return book;
 }
+createBook.prototype.getInfo = function() {
+    return `${this.title} by ${this.author}`;
+}
+createBook.getPrice = function() {
+    return this.price;
+}
+createBook.addRating = function(rating) {
+    this.rating.concat(rating);
+}
+createBook.getRating = function() {
+    let sum = 0;
+    for (let i = 0; i < this.rating.length; i++) {
+        sum += this.rating[i].length;
+    }  
+    return (sum/this.rating.length);
+}
+
 
 
 
