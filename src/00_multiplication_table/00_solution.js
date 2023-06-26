@@ -8,4 +8,5 @@ let multiplicationTable = function(r, c) {
         }
         table.push(row);
     }
+    return table;
 }
