@@ -6,3 +6,10 @@ let useMapToUpperCase = function(string) {
     })
     return output;
 }
+
+let useFilter = function(arr) {
+    let output = arr.filter(function(string) {
+        string.includes("@");
+    })
+    return output;
+}
