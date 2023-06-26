@@ -16,7 +16,7 @@ createBook.getPrice = function() {
     return this.price;
 }
 createBook.addRating = function(rating) {
-    this.rating.concat(rating);
+    this.rating.push(rating);
 }
 createBook.getRating = function() {
     let sum = 0;
