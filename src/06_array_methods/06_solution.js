@@ -15,9 +15,13 @@ let useFilter = function(arr) {
 }
 
 let sumWithReduce = function(arr, val) {
+    if (val === undefined) {
+        val = 0;
+    }
     let sum = arr.reduce(function(accumulator, num) {
         accumulator += num;
         return accumulator;
-    }, 0 + val)
+        console.log(accumulator);
+    }, val)
     return sum;
 }
