@@ -18,6 +18,6 @@ let sumWithReduce = function(arr, val) {
     let sum = arr.reduce(function(accumulator, num) {
         accumulator += num;
         return accumulator;
-    }, val)
+    }, 0 + val)
     return sum;
 }
