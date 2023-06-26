@@ -4,6 +4,5 @@ let useMapToUppercase = function(string) {
     let output = arr.map(function(char) {
         return char.toUpperCase();
     })
-    //return output;
-    console.log(output);
+    return output;
 }
