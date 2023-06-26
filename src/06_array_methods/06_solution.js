@@ -25,3 +25,17 @@ let sumWithReduce = function(arr, val) {
     }, val)
     return sum;
 }
+
+let filterEvensDoubleAndSum = function(arr) {
+    let output = arr.filter(function(num) {
+        return num % 2 === 0;
+    })
+    output = output.map(function(num) {
+        return num * 2;
+    })
+    output = output.reduce(function(accumulator, num) {
+        accumulator += num;
+        return accumulator;
+    })
+    return output;
+}
