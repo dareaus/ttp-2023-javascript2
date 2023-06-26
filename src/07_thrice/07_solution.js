@@ -22,5 +22,5 @@ const helloWorld = thrice(function () {
 //not sure how to do this one. i think there needs to be 
 //a complex type to store the number of times it has been 
 //called but returning the function just gives undefined
-//i dont think this will work because count gets reset
+//i dont think this will work because count should reset
 //everytime thrice is called
